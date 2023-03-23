@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(18, 17, 17);
+}
+
+.netflix_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.heading{
+  padding: 30px 0px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #e50914;
+  /* color: #868686; */
+  background-color: #fff;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+.heading:hover{
+  color: black;
+}
+.cards {
+  /* border: 2px solid black; */
+  margin-top: 50px;
+  color: black;
+  background-color: rgb(210, 216, 222);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.205),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    margin: 80px;
+}
+.cards:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.205),
+    0 6px 20px 0 rgba(255, 0, 0, 0.19);
+  background-color: black;
+  color: white;
+}
+.card {
+  width: 235px;
+  height: 305px;
+  
+}
+.cards .card .card_img {
+  height: 200px;
+  width: 235px;
+}
+.card_info {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card_info a {
+  margin-top: 13px;
+}
+.card_info a button {
+  padding: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(210, 216, 222);
+  border: 1px solid grey;
+}
+.card_info a button:hover {
+  background-color: black;
+  color: #e50914;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 789px) {
+  .card{
+    width: 300px;
+    height: 340px;
+  }
+  .cards .card .card_img {
+    width: 300px;
+    height: 230px;
+  }
+  .heading{
+    font-size: 9px;
+  }
+}
+@media (max-width: 563px)
+{
+  .heading{
+    font-size: 7px;
+    font-weight: bolder;
+  }
+}
